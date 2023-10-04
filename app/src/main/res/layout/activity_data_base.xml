@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back"
+    android:visibility="visible"
+    tools:context=".DataBaseActivity">
+
+    <TextView
+        android:id="@+id/text_userinfo"
+        android:layout_width="263dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="User Login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="360dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="487dp"
+        android:background="@color/cardview_light_background"
+        android:hint="Email"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_userinfo" />
+    <EditText
+        android:id="@+id/password_view"
+        android:layout_width="360dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="387dp"
+        android:background="@color/cardview_light_background"
+        android:hint="@string/prompt_password"
+        android:textColorHint="@color/black"
+        android:inputType="textWebPassword"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_userinfo" />
+
+
+    <TextView
+        android:id="@+id/reg_button"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="128dp"
+        android:textAlignment="center"
+        android:text="Register Here"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:onClick="CreateAcc"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="257dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="45dp"
+        android:text="Login"
+        android:textColor="#000000"
+        android:backgroundTint="#C6E2FF"
+        android:onClick="Login"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/reg_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_view" />
+
+    <TextView
+        android:id="@+id/medication_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot PassWord?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:onClick="ForgotPass"
+        app:layout_constraintBottom_toTopOf="@+id/reg_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Me"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:onClick="RememberMe"
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

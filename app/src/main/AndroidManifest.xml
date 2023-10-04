@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.reminderapp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Medexox"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ReminderApp"
+        tools:replace="android:icon">
+        <activity android:name=".DoctAddActivity"> </activity>
+        <activity android:name=".DoctListActivity" />
+        <activity android:name=".SmsbodyActivity" />
+        <activity android:name=".EmailBodyActivity" />
+        <activity android:name=".EmergencyCallShow" />
+        <activity android:name=".AddCallerActivity" />
+        <activity android:name=".Diabates" />
+        <activity android:name=".Weight" />
+        <activity android:name=".BMR" />
+        <activity android:name=".BMI" />
+        <activity android:name=".BP" />
+        <activity android:name=".HealthStatusUpdateActivity" />
+        <activity android:name=".HealthStatus" />
+        <activity android:name=".UpdateAccActivity" />
+        <activity android:name=".MyAccount" />
+        <activity android:name=".ForgotPassWordActivity" />
+        <activity android:name=".DashBoard" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DataBaseActivity" />
+        <activity android:name=".Medication" />
+        <activity android:name=".Appoinment" />
+        <activity android:name=".AddMedication" />
+        <activity android:name=".AddAppoinment" />
+        <activity android:name=".EmergencyContacts" />
+        <activity
+            android:name=".ui.login.DataBaseActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Alarm"/>
+        <receiver android:name=".AlarmWorks.BroadCaster">
+
+        </receiver>
+        <receiver android:name=".AlarmWorks.UpdateStats"/>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

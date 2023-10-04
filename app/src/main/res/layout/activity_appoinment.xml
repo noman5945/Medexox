@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Appoinment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/reg1"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/purple_500"
+            android:text="New Appoinment"
+            android:textAlignment="center"
+            android:backgroundTint="#1C86EE"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Doctor's Name"
+            android:textColor="#0123DF">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/doctorName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:hint="Doctor's Name"
+            android:textColor="@color/black"
+            android:textColorHint="#92000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Description"
+            android:textColor="#051C9E">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/doctorDescription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Description e.g chamber's location"
+            android:textColor="@color/black"
+            android:textColorHint="#90000000"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Set Appointment Time"
+            android:textColor="#051C9E"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Set Time"
+            android:textColor="@color/black"
+            android:textColorHint="#90000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/setButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET"
+            android:backgroundTint="#1C86EE"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:onClick="setTime"/>
+
+        <Button
+            android:id="@+id/cancelButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-48dp"
+            android:text="CANCEL"
+            android:backgroundTint="#1C86EE"
+            android:onClick="removeTime"
+            android:layout_marginLeft="207dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Set Appointment Date"
+            android:textColor="#051C9E"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:hint="Set Date"
+            android:textColor="@color/black"
+            android:textColorHint="#90000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/setButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET"
+            android:onClick="setDat"
+            android:backgroundTint="#1C86EE"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"/>
+
+        <Button
+            android:id="@+id/cancelButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-48dp"
+            android:text="CANCEL"
+            android:backgroundTint="#1C86EE"
+            android:onClick="removeDate"
+            android:layout_marginLeft="207dp" />
+
+
+        <Button
+            android:id="@+id/Done_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Done"
+            android:backgroundTint="#1C86EE"
+            android:onClick="setAppointment"
+            android:layout_marginLeft="60dp" />
+
+        <Button
+            android:id="@+id/exit_button1"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="207dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="-48dp"
+            android:text="Exit"
+            android:backgroundTint="#1C86EE"
+            android:onClick="back" />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

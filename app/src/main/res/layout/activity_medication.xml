@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".Medication">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/reg"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/purple_500"
+            android:text="New Medication"
+            android:textAlignment="center"
+            android:backgroundTint="#1C86EE"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Medication Name"
+            android:textColor="#0123DF">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/pill_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:hint="Medication Name"
+            android:textColor="@color/black"
+            android:textColorHint="#92000000"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Medicine Time:"
+            android:textColor="#0123DF"
+            android:layout_marginTop="15dp"/>
+
+
+        <TimePicker
+            android:layout_gravity="center"
+            android:id="@+id/timePicker"
+            android:layout_width="241dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:timePickerMode="spinner" />
+
+        <Button
+            android:id="@+id/setButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET"
+            android:backgroundTint="#1C86EE"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-48dp"
+            android:text="CANCEL"
+            android:backgroundTint="#1C86EE"
+            android:onClick="back"
+            android:layout_marginLeft="207dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Medicine Doze End Date"
+            android:textColor="#0123DF">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/endDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="2dp"
+            android:hint=" day/month/year"
+            android:textColor="@color/black"
+            android:textColorHint="#92000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/setDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET"
+            android:onClick="SetDate"
+            android:backgroundTint="#1C86EE"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"/>
+
+        <Button
+            android:id="@+id/canceDatelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-48dp"
+            android:text="CANCEL"
+            android:backgroundTint="#1C86EE"
+            android:onClick="back"
+            android:layout_marginLeft="207dp"/>
+
+        <Button
+            android:id="@+id/Done_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Done"
+            android:backgroundTint="#1C86EE"
+            android:onClick="SetAll"
+            android:layout_marginLeft="60dp" />
+
+        <Button
+            android:id="@+id/exit_button1"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="207dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="-48dp"
+            android:text="Exit"
+            android:backgroundTint="#1C86EE"
+            android:onClick="back" />
+
+    </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

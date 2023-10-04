@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_back"
+    tools:context=".ForgotPassWordActivity">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="289dp"
+        android:layout_height="63dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="sans-serif-thin"
+        android:text=" Reset Password"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/cardview_light_background"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textSize="20dp">
+    </EditText>
+
+    <Button
+        android:id="@+id/reset_pass"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="90dp"
+        android:text="Send Reset Link"
+        android:textColor="#000000"
+        android:backgroundTint="#C6E2FF"
+        android:onClick="ResetPass"
+        android:layout_marginTop="90dp">
+    </Button>
+    <Button
+        android:id="@+id/canc"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="90dp"
+        android:text="Cancel"
+        android:textColor="#000000"
+        android:backgroundTint="#C6E2FF"
+        android:onClick="cancel"
+        android:layout_marginTop="50dp">
+    </Button>
+</LinearLayout>
